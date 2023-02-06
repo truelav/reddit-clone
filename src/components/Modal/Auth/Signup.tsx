@@ -28,7 +28,7 @@ const Signup: React.FC = () => {
 
     return (
         <>
-            <form onSubmit={onsubmit}>
+            <form onSubmit={onsubmit} >
                 <Input
                     name="email"
                     placeholder="email"

@@ -14,6 +14,7 @@ import {
 import { useRecoilState, useRecoilValue } from "recoil";
 import { authModalState } from "../../../atoms/authModalAtom";
 import AuthInputs from "./AuthInputs";
+import OAuthButtons from "./OAuthButtons";
 
 const AuthModal: React.FC = () => {
     const [modalState, setModalState] = useRecoilState(authModalState)
@@ -49,8 +50,8 @@ const AuthModal: React.FC = () => {
                             border="1px solid red"
                         >
 
-                            {/* <OathButtons />
-                            <ResetPassword /> */}
+                            {/* <ResetPassword /> */}
+                            <OAuthButtons />
                             <AuthInputs />
                         </Flex>
                     </ModalBody>
